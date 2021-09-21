@@ -1,0 +1,213 @@
+
+.bloco-titulo-main{
+	display:block;
+	width: 100%;
+	height:200px;
+	text-align: center;
+	margin: 0px auto;
+	border-radius: 0px;
+}
+
+.bloco-titulo-main-2 {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 50px;
+  display:block;
+	width: 100%;
+	height:100px;
+	text-align: center;
+	margin: 0px auto;
+	border-radius: 0px;
+}
+
+.bloco-titulo-main-2 h1 {
+  font-weight: 800;
+  color: white;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+/*---------------------*/
+
+
+.bloco-itens-main {
+    align-self: center;
+    display: grid;
+    grid-template-areas: 'list' 'footer';
+    grid-template-columns: 100%;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bloco-itens-list {
+  background-color: transparent;
+  grid-area: list;
+  box-sizing: border-box;
+}
+
+.itens-inputs {
+  position: relative;
+  background-color: rgba(27, 45, 81, 1);
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content max-content;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1%;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow-y: hidden;
+  width: auto;
+  padding: 10px;
+}
+
+.item-input  {
+  margin: 0px;
+}
+.item-input p {
+  color: white;
+  margin: 1px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.itens-atributes {
+	background-color: white;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 5px;
+  color: black;
+}
+
+.action-delete {
+  display: block;
+  visibility: hidden;
+	padding: 0px 8px 8px 8px;
+  cursor: pointer;
+  margin: 0px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.action-delete p {
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.bloco-itens-actions {
+  background-color: transparent;
+  display: grid;
+  grid-area: footer;
+  grid-gap: 1%;
+  width: calc(100% - 0px);
+  justify-content: space-evenly;
+}
+
+.action-add {
+  background-color: #000000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  vertical-align: center;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+.action-text{
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.action-calcular {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 15px 10px;
+    margin: 10px;
+}
+#input-potencia {
+  max-width: auto;
+}
+#input-tempo {
+  max-width: auto;
+}
+#input-quantidade {
+  max-width: auto;
+}
+/*--------*/
+#piechart {
+  display: block;
+  margin: 5px auto;
+  width: 99%;
+  padding: 2px;
+  overflow: scroll;
+  background-color: rgba(27, 45, 81, 0.0);
+  border: 2px solid rgba(27, 45, 81, 1);
+  border-radius: 5px;
+}
+#tablechart {
+  display: block;
+  margin: 5px auto;
+  width: 99%;
+  padding: 2px;
+  background-color: rgba(27, 45, 81, 0.0);
+  border: 2px solid rgba(27, 45, 81, 1);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .itens-inputs{
+    justify-content: normal;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .itens-inputs {
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1%;
+    overflow-x: scroll;
+    justify-content: space-evenly;
+  }
+  .item-input p {
+    font-size: 0.7em;
+  }
+
+  .action-delete p {
+    font-size: 1.2em;
+  }
+
+  #input-potencia input{
+    max-width: 80px;
+  }
+  #input-tempo input{
+    max-width: 100px;
+  }
+  #input-quantidade input{
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .itens-inputs{
+    justify-content: normal;
+  }
+}

@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/logo-lampada.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+* {
+    font-family: Arial, monospace;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.bloco-content-principal {
+    min-height: 800px;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.footer-principal {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #fdce58;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.footer-principal div {
+    display: block;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.footer-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-principal p {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-principal p {
+        font-size: 0.8em;
+    }
+}

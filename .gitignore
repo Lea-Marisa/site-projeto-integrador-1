@@ -1,0 +1,7 @@
+.idea
+db.sqlite3 
+.env
+requirements.txt
+runtime.txt
+.env
+Procfile
